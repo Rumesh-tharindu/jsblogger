@@ -1,14 +1,14 @@
 
 @font-face{ 
-    font-family: 'kohinoor';
-    src: url('../fonts/kohinoor.woff');
-     src: url('../fonts/kohinoor.woff2')
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Medium.ttf');
+     src: url('../fonts/Poppins-Medium.ttf')
 }
 
 
 
 :root{
-	--font-primary: 'moniker';
+	--font-primary: 'poppins';
   --font-primary-light: 'moniker-light';
 	--font-title: 'kohinoor';
 	--font-title-bold: 'kohinoor-bold';
@@ -31,6 +31,7 @@ html {
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
+  --gap:3rem;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
   letter-spacing: 0;
   background-color: #fff;
   color: var(--grey-color);
-  font-family: var(--font-title);
+  font-family: var(--font-primary);
   font-weight: normal;
 }
 
@@ -123,6 +124,9 @@ button:focus {outline: none; }
 
 select { -webkit-appearance: none; -moz-appearance: none; padding: 0 10px; }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
 
 a {
   cursor: pointer;
@@ -179,11 +183,6 @@ section {
 /*------- End layout ------------------*/
 
 
-
-/*------- Headder ------------------*/
-
-
-
 @media screen and (max-width: 1020px) {
   
 }
@@ -237,6 +236,7 @@ section {
   }
 
 }
+
 
 
 
